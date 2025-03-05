@@ -27,6 +27,6 @@ export default class User {
     toString(){
         return `ID: ${this.id}\n` +
                `Name: ${this.name}\n` +
-               `Borrowed Number Books: ${this.borrowedBooks}`;
+               `Borrowed Number Books: ${this.borrowedBooksNumber}`;
     }
 }
