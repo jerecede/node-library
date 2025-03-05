@@ -1,5 +1,5 @@
 import { question } from 'readline-sync';
-import { Library } from './model/library.js';
+import Library from './model/library.js';
 
 const library = new Library('berio');
 
