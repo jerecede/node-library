@@ -6,9 +6,9 @@ export class Book {
     }
 
     toString(){
-        return `Autore: ${this.author}\n` +
+        return `ISBN: ${this.isbn}\n` +
                `Titolo: ${this.title}\n` +
-               `ISBN: ${this.isbn}`;
+               `Autore: ${this.author}`;
     }
 }
 
