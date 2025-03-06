@@ -28,7 +28,7 @@ export default class Library {
         if(!book){                //controlla se il libro esiste nella biblioteca
             false
         } else {
-            if(!book.isBorrowed){ //se è ebook da undefined, quindi false(diventa true, disponibile) // se è physical flase se non è stato preso (diventa true, è disponibile)
+            if(!book.isBorrowed){ //se è un ebook restituisce undefined, quindi false(diventa true, disponibile) // se è physical, false se non è stato preso (diventa true, è disponibile)
                 return true;
             }
             else{                 //senno da true(diventa false quindi preso in prestito)

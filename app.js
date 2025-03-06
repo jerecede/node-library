@@ -60,7 +60,7 @@ function addBook() {
     const typeBookString = "che tipo di libro e'? elettronico [e] fisico [f]\n>>>";
     const answerTypeBook = question(typeBookString);
 
-    switch (answerTypeBook) {
+    switch (answerTypeBook.toLowerCase()) {
         case 'e':
             let fileFormat = '';
             const fileformatString = "che formato vuoi? pdf [1] epub [2] mobi [3]\n>>>";
@@ -81,7 +81,8 @@ function addBook() {
             break;
             
         case 'f':
-            const shelfLocation = Math.round((Math.random * 9) + 1);
+            const shelfLocation = Math.round((Math.random() * 9) + 1);
+            console.log(shelfLocation);
             const pbook = new PhysicalBook(isbn, answerTitle, answerAuthor, shelfLocation);
             library.addBook(pbook);
             break;
